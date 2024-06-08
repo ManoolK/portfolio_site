@@ -1,6 +1,27 @@
 .navbar {
-    /* padding-bottom: 0.625rem; */
-    background-color: rgb(48, 60, 108);
+    /* padding-bottom: 1rem; */
+    padding: 0 2.4rem 1rem;
+    background-color: var(--dxp-g-brand);
+    /* rgb(48, 60, 108); */
+}
+
+.mnlk-nav-link:link,
+.mnlk-nav-link:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+}
+
+.mnlk-nav-link:hover,
+.mnlk-nav-link:active {
+    color: #F4976C;
+}
+
+.mnlk-cta {
+    padding: 1.6rem 3.2 rem;
+    border-radius: 9px;
 }
 
 .navbar-items {
