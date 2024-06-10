@@ -1,7 +1,7 @@
 /**
  * A controller for fetching NavigationMenuItems.
  */
-public with sharing class NavigationMenuItemsController {
+global with sharing class NavigationMenuItemsController {
     public NavigationMenuItemsController() {}
 
     @AuraEnabled(cacheable=true)
@@ -35,7 +35,7 @@ public with sharing class NavigationMenuItemsController {
                 Status,
                 TargetPrefs
             FROM NavigationMenuItem
-            WHERE NavigationLinkSetId = :linkSetId AND Status = :publishedState
+            WHERE NavigationLinkSetId = :linkSetId AND Status = :publishedState //0LmDn000000gJRmKAM
             ORDER BY Position
         ];
     }

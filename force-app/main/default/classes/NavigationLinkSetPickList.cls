@@ -1,7 +1,7 @@
 global class NavigationLinkSetPickList extends VisualEditor.DynamicPickList {
     global override VisualEditor.DataRow getDefaultValue() {
         VisualEditor.DataRow defaultValue = new VisualEditor.DataRow(
-            'Default Navigation',
+            'Default Navigation', 
             'Default Navigation'
         );
         return defaultValue;
