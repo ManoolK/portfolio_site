@@ -1,11 +1,15 @@
 <template>
     <header data-f6-region class="custom-header">
-        <slot name="header"></slot>
+        <slot name="header">
+            <c-navigation-menu></c-navigation-menu>
+        </slot>
     </header>
     <main data-f6-region class="slds-var-p-top_large">
         <slot></slot>
     </main>
     <footer data-f6-region>
-        <slot name="footer"></slot>
+        <!-- <slot name="footer"> -->
+            <c-footer></c-footer>
+        <!-- </slot> -->
     </footer>
 </template>

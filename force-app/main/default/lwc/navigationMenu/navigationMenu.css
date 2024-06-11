@@ -10,7 +10,7 @@
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: var(--dxp-g-font-size-7);
     transition: all 0.3s;
 }
 
@@ -22,12 +22,6 @@
 .mnlk-cta {
     padding: 1.6rem 3.2 rem;
     border-radius: 9px;
-}
-
-.navbar-items {
-    font-family: var(--dxp-g-root-font-family);
-    font-size: 1rem;
-    font-weight: 500;
 }
 
 .hamburger-menu-container {
@@ -49,6 +43,6 @@ img.hamburger-menu-icon {
 
 @media (max-width: 480px) {
     .navbar-items {
-        font-size: 1.6rem;
+        font-size: var(--dxp-g-font-size-8);
     }
 }

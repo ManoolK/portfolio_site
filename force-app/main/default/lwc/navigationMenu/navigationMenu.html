@@ -46,17 +46,17 @@
         </div>
     </template>
     <div class="slds-grid slds-grid_vertical-align-center navbar">
-        <div class="slds-col slds-var-p-left_small slds-var-p-top_small slds-size_3-of-4 slds-large-size_1-of-5">
+        <div class="slds-col slds-var-p-left_small slds-var-p-top_small slds-size_3-of-4 slds-large-size_1-of-6">
             <span>
                 <c-navigation-menu-logo formfactor="desktop"></c-navigation-menu-logo>
             </span>
         </div>
-        <div class="slds-col slds-var-p-top_small slds-var-p-horizontal_large slds-show_large">
+        <div class="slds-col slds-var-p-top_small slds-show_large slds-p-horizontal_x-small">
             <span>
                 <nav role="navigation">
                     <ul class="slds-list_horizontal slds-has-block-links_space">
                         <template for:each={menuItems} for:item="item">
-                            <li key={item.id} class="navbar-items slds-var-p-horizontal_large">
+                            <li key={item.id} class="slds-var-p-horizontal_large">
                                 <c-navigation-menu-item item={item}></c-navigation-menu-item>
                             </li>
                         </template>
@@ -64,11 +64,11 @@
                 </nav>
             </span>
         </div>
-        <div class="slds-col slds-var-p-top_small slds-col_bump-left slds-grid_align-end slds-show_large">
+        <div class="slds-col slds-var-p-top_small slds-col_bump-left slds-grid_align-end slds-show_large slds-large-size_2-of-7">
             <div class="slds-grid slds-grid_align-end slds-gutters_medium slds-grid_vertical-align-center">
                 <div class="slds-col">
                     <span>
-                        <a href="/customer/s" class="mnlk-nav-link">My Account</a>
+                        <a href="/customer/s" class="mnlk-nav-link">Log In</a>
                     </span>
                 </div>
                 <div class="slds-col">

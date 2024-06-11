@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Oxana Suvorova</container>
+    <containerType>Network</containerType>
+    <label>Default Navigation</label>
+    <navigationMenuItem>
+        <label>Home</label>
+        <position>1</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>LinkedIn</label>
+        <position>2</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>https://www.linkedin.com/in/suvorovaoxana/</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

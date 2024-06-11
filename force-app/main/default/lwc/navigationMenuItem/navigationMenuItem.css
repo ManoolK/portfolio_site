@@ -8,7 +8,7 @@
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: var(--dxp-g-font-size-7);
     transition: all 0.3s;
 }
 
