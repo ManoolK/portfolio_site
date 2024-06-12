@@ -1,0 +1,14 @@
+.footer {
+    padding: 0 2.4rem 1rem;
+    background-color: var(--dxp-g-brand);
+    /* rgb(48, 60, 108); */
+}
+
+.mnlk-cta {
+    padding: 1.6rem 3.2 rem;
+    border-radius: 9px;
+}
+
+.copyright {
+    color: var(--dxp-g-brand-contrast);
+}

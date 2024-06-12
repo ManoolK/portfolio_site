@@ -6,11 +6,12 @@
 :root {
     /** Use --dxp-g to make broad changes **/
     --dxp-g-root: #fff;
-    --dxp-g-root-contrast: #333333;
     --dxp-g-root-1: #F5F8F7;
     --dxp-g-root-2: #FCF7F2;
+    --dxp-g-root-contrast: #333333;    
     --dxp-g-root-contrast-1: #303C6C;
     --dxp-g-root-contrast-2: #303C6C;
+    --dxp-g-root-contrast-3: #fff;
     --dxp-g-brand: #303C6C;
     --dxp-g-brand-contrast: #D2FDFF;
     --dxp-g-brand-1: #F4976C;

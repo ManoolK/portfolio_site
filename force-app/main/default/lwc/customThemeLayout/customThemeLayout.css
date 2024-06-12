@@ -18,3 +18,9 @@
     background-color: var(--dxp-g-root);
     min-height: 4.5rem;
 }
+
+.custom-footer {
+    width: 100%;
+    background-color: var(--dxp-g-brand);
+    padding-top: 4rem;
+}

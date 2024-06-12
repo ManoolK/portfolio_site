@@ -1,3 +1,35 @@
 <template>
-    <h1>Footer</h1>
+    <div class="slds-grid footer">
+        <div class="slds-col slds-var-p-left_small logo-col">
+            <span>
+                <c-navigation-menu-logo formfactor="desktop"></c-navigation-menu-logo>
+            </span>
+            <p class="copyright">Copyright &copy; 2024 by Oxana Suvorova. All Rights Reserved.</p>
+        </div>
+        <nav role="navigation" class="slds-col nav-col">
+            <p class="footer-heading">Navigation</p>
+            
+            <ul>
+                <template for:each={menuItems} for:item="item">
+                    <li key={item.id}> 
+                        <c-navigation-menu-item item={item}></c-navigation-menu-item>
+                    </li>
+                </template>
+            </ul>
+        </nav>
+        <div class="slds-col contacts-col">
+            <p class="footer-heading">Contact</p>
+            <address class="contacts">
+                <p>
+                    <a href="https://www.linkedin.com/in/suvorovaoxana/">LinkedIn</a>
+                </p>
+                <p>
+                    <a href="mailto:mail.suvorova.o@gmail.com?subject=Hi Oxana, I'd Like To Introduce Myself">Email Me</a>
+                </p>
+                <p>
+                    <a href="https://www.salesforce.com/trailblazer/suvorova">Trailblazer.me</a>
+                </p>
+            </address>
+        </div>
+    </div>
 </template>

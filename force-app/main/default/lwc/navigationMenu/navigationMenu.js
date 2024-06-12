@@ -1,4 +1,4 @@
-import { LightningElement, api, wire, track } from 'lwc';
+import { LightningElement, api, wire } from 'lwc';
 import { CurrentPageReference, NavigationMixin } from 'lightning/navigation';
 import HAMBURGER_ICON from '@salesforce/resourceUrl/hamburgerIcon';
 import X_ICON from '@salesforce/resourceUrl/xIcon';
