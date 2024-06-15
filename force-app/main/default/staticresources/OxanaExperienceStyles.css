@@ -2,6 +2,16 @@
 * Scoped to the root of the document and all its descendant elements.
 * Add this to the Header markup in Experience builder>Settings>Advanced>Edit Header: 
 * <link rel="stylesheet" href="/sfsites/c/resource/OxanaExperienceStyles" />
+* Font size system (px)
+* 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+* Font weights:
+* Default: 400
+*
+* Line heights:
+* Default: 1
+*
+* Spacing system (px)
+* 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
 */
 :root {
     /** Use --dxp-g to make broad changes **/
@@ -26,6 +36,8 @@
     --dxp-g-footer-contrast: #303C6C;
     /** set the font for all root/body text **/
     --dxp-g-root-font-family: "Salesforce Sans", arial;
+    /** set root html font size. Percentage of user's browser font-size setting **/
+    --dxp-s-html-font-size: 62.5%;
     /** set the font for headings **/
     --dxp-g-heading-font-family: 'Salesforce Sans', sans-serif;
     --dxp-g-text-heading_large: 3rem;
@@ -35,11 +47,17 @@
 
     /** Font for buttons **/
     --dxp-s-button-font-family: Salesforce Sans;
+    --dxp-s-link-text-decoration: none;
+    --dxp-s-button-color-contrast: #fff;
+    --dxp-s-button-color-hover-contrast: #fff;
+    --dxp-s-button-color-focus-contrast: #fff;
+    --dxp-s-button-font-size: 2rem;
 
     --dxp-c-anchor-text-color: #333;
     
     --sds-c-button-radius-border: 1.5625rem;
     
+    --dxp-c-link-transition: all 0.3s;
 
     --dxp-c-section-content-spacing-inline-start: 5rem;
     --dxp-c-section-content-spacing-inline-end: 5rem;

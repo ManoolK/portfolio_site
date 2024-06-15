@@ -1,11 +1,14 @@
 import { LightningElement, api, wire } from 'lwc';
-import { NavigationMixin } from 'lightning/navigation';
+import { CurrentPageReference, NavigationMixin } from 'lightning/navigation';
 import getNavigationMenuItems from '@salesforce/apex/NavigationMenuItemsController.getNavigationMenuItems';
 import isGuestUser from '@salesforce/user/isGuest';
+import basePath from '@salesforce/community/basePath';
 
 export default class Footer extends NavigationMixin(LightningElement) {
     @api menuName;
+
     error;
+    href = basePath;
     isLoaded = false;
     // The menu items when fetched by the NavigationItemsController
     menuItems = [];
@@ -42,6 +45,16 @@ export default class Footer extends NavigationMixin(LightningElement) {
             this.menuItems = [];
             this.isLoaded = true;
             console.error(`Navigation menu error: ${JSON.stringify(this.error)}`);
+        }
+    }
+
+    @wire(CurrentPageReference)
+    setCurrentPageReference(currentPageReference) {
+        const app = currentPageReference && currentPageReference.state && currentPageReference.state.app;
+        if (app === 'commeditor') {
+            this.publishedState = 'Draft';
+        } else {
+            this.publishedState = 'Live';
         }
     }
 }

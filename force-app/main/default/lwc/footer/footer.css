@@ -12,3 +12,13 @@
 .copyright {
     color: var(--dxp-g-brand-contrast);
 }
+
+.footer-heading {
+    font-size: 1.8rem;
+    font-weight: var(--dxp-s-button-font-weight);
+    color: var(--dxp-g-brand-1);
+}
+
+.footer-nav {
+    font-size: 1.6rem;
+}

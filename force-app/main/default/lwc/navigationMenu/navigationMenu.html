@@ -54,7 +54,7 @@
         <div class="slds-col slds-var-p-top_small slds-show_large slds-p-horizontal_x-small">
             <span>
                 <nav role="navigation">
-                    <ul class="slds-list_horizontal slds-has-block-links_space">
+                    <ul class="slds-list_horizontal slds-has-block-links_space navigation-header">
                         <template for:each={menuItems} for:item="item">
                             <li key={item.id} class="slds-var-p-horizontal_large">
                                 <c-navigation-menu-item item={item}></c-navigation-menu-item>
@@ -78,7 +78,7 @@
                             label={buttonLabel}
                             title="Primary action"
                             onclick={handleClick}
-                            class="slds-var-m-right_x-small mnlk-cta"
+                            class="slds-var-m-right_x-medium mnlk-cta"
                         ></lightning-button>
                     </span>
                 </div>
