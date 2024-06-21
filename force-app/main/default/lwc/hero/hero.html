@@ -1,8 +1,18 @@
 <template>
-    <img src={personImageURL} alt="">
-    <h1>I'm Oxana</h1>
-    <h1>Salesforce Developer</h1>
-    <p>I bring my expertise as a Salesforce Developer.</p>
-    <button>View My Portfolio</button>
-    <button>Hire Me</button>
+    <section class="section-hero">
+        <div class="hero">
+            <div class="hero-text-box">
+                <span class="fun-text">Hello!</span>
+                <img src={funImageURL} class="fun-image" alt="fun lines">
+                <h1 class="heading-primary orange">I'm Oxana,</h1>
+                <h1 class="heading-primary">Salesforce Developer</h1>
+                <p class="hero-description">Certified Salesforce Engineer with a real passion for making things more efficient and tackling complex business challenges. Love creating practical, user-friendly solutions. I have hands-on experience in Salesforce development, administration, integrations, and deployment.</p>
+                <a href="#" class="btn btn--full margin-right-small">View My Portfolio</a>
+                <a href="#" class="btn btn--outline">Hire Me</a>
+            </div>
+            <div class="hero-image-box">
+                <img src={personImageURL} class="hero-img" alt="Oxana Suvorova photo">
+            </div>
+        </div>
+    </section>
 </template>

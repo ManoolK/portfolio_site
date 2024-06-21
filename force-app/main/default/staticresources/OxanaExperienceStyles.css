@@ -6,6 +6,7 @@
 * 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 * Font weights:
 * Default: 400
+* Button: 600
 *
 * Line heights:
 * Default: 1
@@ -47,11 +48,13 @@
 
     /** Font for buttons **/
     --dxp-s-button-font-family: Salesforce Sans;
+    --dxp-s-button-font-size: 2rem;
+    --dxp-s-button-font-weight: 600;
     --dxp-s-link-text-decoration: none;
     --dxp-s-button-color-contrast: #fff;
     --dxp-s-button-color-hover-contrast: #fff;
     --dxp-s-button-color-focus-contrast: #fff;
-    --dxp-s-button-font-size: 2rem;
+
 
     --dxp-c-anchor-text-color: #333;
     
@@ -73,7 +76,7 @@
     
     @media only screen and (min-width: 48em) {
         h1 {
-            font-family: DM Serif Display;
+            font-family: Noto Sans JP, DM Serif Display;
             font-style: normal;
             font-weight: bold;
             font-size: 4rem;
@@ -81,7 +84,7 @@
             letter-spacing: 0.05em;
         }
         h2 {
-            font-family: DM Serif Display;
+            font-family: Noto Sans JP, DM Serif Display;
             font-style: normal;
             font-weight: bold;
             font-size: 3rem;
@@ -108,7 +111,7 @@
 
     @media only screen and (max-width: 47.99em) {
         h1 {  
-            font-family: DM Serif Display;
+            font-family: Noto Sans JP, DM Serif Display;
             font-style: normal;
             font-weight: bold;
             font-size: 2.25rem;
@@ -116,7 +119,7 @@
             letter-spacing: 0.05em;
         }
         h2 {
-            font-family: DM Serif Display;
+            font-family: Noto Sans JP, DM Serif Display;
             font-style: normal;
             font-weight: bold;
             font-size: 2rem;
