@@ -10,6 +10,13 @@
 *
 * Line heights:
 * Default: 1
+* Small: 1.05
+* Medium: 1.2
+* Paragraph default: 1.6
+*
+* Letter spacing:
+* -0.5px
+* 0.75px
 *
 * Spacing system (px)
 * 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
@@ -62,8 +69,9 @@
     
     --dxp-c-link-transition: all 0.3s;
 
-    --dxp-c-section-content-spacing-inline-start: 5rem;
-    --dxp-c-section-content-spacing-inline-end: 5rem;
+    --dxp-c-section-content-spacing-inline-start: 0;
+    --dxp-c-section-content-spacing-inline-end: 0;
+    --dxp-c-section-columns-max-width: none;
     --dxp-c-header-container-spacing-inline-start: 5rem;
     --dxp-c-header-container-spacing-inline-end: 5rem;
     --dxp-c-footer-container-spacing-inline-start: 5rem;
