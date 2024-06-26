@@ -79,152 +79,167 @@
 
     --sds-c-button-brand-spacing-inline-start: 1.875rem;
     --sds-c-button-brand-spacing-inline-end: 1.875rem;
-    }
+
+    /** Brand color shades **/
+    --slds-g-color-brand-base-70: #c1c5d3;
+    --slds-g-color-brand-base-10: #45507b;
+}
 
     
-    @media only screen and (min-width: 48em) {
-        h1 {
-            font-family: Noto Sans JP, DM Serif Display;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 4rem;
-            line-height: 3.75rem;
-            letter-spacing: 0.05em;
-        }
-        h2 {
-            font-family: Noto Sans JP, DM Serif Display;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 3rem;
-            line-height: 3.75rem;
-            letter-spacing: 0.05em;
-        }
-        h3 {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.625rem;
-            line-height: 2.8125rem;
-            letter-spacing: 0.05em;
-            color: var(--dxp-g-root-contrast, #333);
-        }
-        h4 {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.625rem;
-            line-height: 2.8125rem;
-            letter-spacing: 0.05em;
-            color: var(--dxp-g-root-contrast, #333);
-        }
+@media only screen and (min-width: 48em) {
+    h1 {
+        font-family: Noto Sans JP, DM Serif Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4rem;
+        line-height: 3.75rem;
+        letter-spacing: 0.05em;
     }
-
-    @media only screen and (max-width: 47.99em) {
-        h1 {  
-            font-family: Noto Sans JP, DM Serif Display;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 2.25rem;
-            line-height: 2.625rem;
-            letter-spacing: 0.05em;
-        }
-        h2 {
-            font-family: Noto Sans JP, DM Serif Display;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 2rem;
-            line-height: 2.25rem;
-            letter-spacing: 0.05em;
-        }
-        h3 {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.5rem;
-            line-height: 2.25rem;
-            letter-spacing: 0.05em;
-            color: var(--dxp-g-root-contrast, #333);
-        }
-        h4 {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.25rem;
-            line-height: 2.1875rem;
-            letter-spacing: 0.05em;
-            color: var(--dxp-g-root-contrast, #333);
-        }
+    h2 {
+        font-family: Noto Sans JP, DM Serif Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 3.75rem;
+        letter-spacing: 0.05em;
     }
-
-    /* p {
-        letter-spacing: 0.03rem;
+    h3 {
+        font-family: Noto Sans JP, DM Serif Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.625rem;
+        line-height: 2.8125rem;
+        letter-spacing: 0.05em;
+        color: var(--dxp-g-root-contrast, #333);
     }
+    h4 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.625rem;
+        line-height: 2.8125rem;
+        letter-spacing: 0.05em;
+        color: var(--dxp-g-root-contrast, #333);
+    }
+}
 
-    img {
-        vertical-align: middle;
-    } */
+@media only screen and (max-width: 47.99em) {
+    h1 {  
+        font-family: Noto Sans JP, DM Serif Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.25rem;
+        line-height: 2.625rem;
+        letter-spacing: 0.05em;
+    }
+    h2 {
+        font-family: Noto Sans JP, DM Serif Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 2.25rem;
+        letter-spacing: 0.05em;
+    }
+    h3 {
+        font-family: Noto Sans JP, DM Serif Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        letter-spacing: 0.05em;
+        color: var(--dxp-g-root-contrast, #333);
+    }
+    h4 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.25rem;
+        line-height: 2.1875rem;
+        letter-spacing: 0.05em;
+        color: var(--dxp-g-root-contrast, #333);
+    }
+}
 
+/* p {
+    letter-spacing: 0.03rem;
+}
+
+img {
+    vertical-align: middle;
+} */
+
+.scroll {
+    
+    width: 3rem;
+    height: 3rem;
+    border-color: var(--dxp-g-root-contrast-1);
+    border:solid;
+    background-color: white;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    bottom: 80px;
+    right: 60px;
+    opacity: 0.8;
+    border-radius: 50%;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+    animation: fadeup-scrolltop 0.7s;
+}
+
+@media all and (max-width: 400px) {
     .scroll {
-        
-        width: 3rem;
-        height: 3rem;
-        border-color: var(--dxp-g-root-contrast-1);
-        border:solid;
-        background-color: white;
-        position: fixed;
-        display: none;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        bottom: 80px;
-        right: 60px;
+        bottom: 40px;
+        right: 40px;
+        animation: fadeup-scrolltop-mobile 0.7s;
+    }
+}
+    
+.scroll svg {
+    fill: var(--dxp-g-brand-1);
+}
+    
+@keyframes fadeup-content {
+    0% {
+        opacity: 0;
+        position: relative;
+        top: 2rem;
+    }
+    100% {
+        opacity: 1;
+        position: relative;
+        top: 0;
+    }
+}
+    
+@keyframes fadeup-scrolltop {
+    0% {
+        opacity: 0;
+        bottom: 20px;
+    }
+    100% {
         opacity: 0.8;
-        border-radius: 50%;
-        z-index: 9;
-        cursor: pointer;
-        transition: opacity 0.2s ease-in-out;
-        animation: fadeup-scrolltop 0.7s;
+        bottom: 80px;
     }
+}
+    
+@keyframes fadeup-scrolltop-mobile {
+    0% {
+        opacity: 0;
+        bottom: 20px;
+    }
+    100% {
+        opacity: 0.8;
+        bottom: 40px;
+    }
+}
 
-    @media all and (max-width: 400px) {
-        .scroll {
-            bottom: 40px;
-            right: 40px;
-            animation: fadeup-scrolltop-mobile 0.7s;
-        }
-    }
-    
-    .scroll svg {
-        fill: var(--dxp-g-brand-1);
-    }
-    
-    @keyframes fadeup-content {
-        0% {
-            opacity: 0;
-            position: relative;
-            top: 2rem;
-        }
-        100% {
-            opacity: 1;
-            position: relative;
-            top: 0;
-        }
-    }
-    
-    @keyframes fadeup-scrolltop {
-        0% {
-            opacity: 0;
-            bottom: 20px;
-        }
-        100% {
-            opacity: 0.8;
-            bottom: 80px;
-        }
-    }
-    
-    @keyframes fadeup-scrolltop-mobile {
-        0% {
-            opacity: 0;
-            bottom: 20px;
-        }
-        100% {
-            opacity: 0.8;
-            bottom: 40px;
-        }
-    }
+.container {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+.gap--small {
+    gap: 2rem;
+}

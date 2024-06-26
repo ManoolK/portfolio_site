@@ -12,11 +12,32 @@
     margin-bottom: 9.6rem;
 }
 
+.heading-tertiary {
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+    color: var(--dxp-g-root);
+}
+
 .orange {
     color: var(--dxp-g-brand-1);
 }
 
+.project {
+    background-color: var(--slds-g-color-brand-base-10);
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+}
 
+.project-descr {
+    font-size: 1.8rem;
+    color: var(--slds-g-color-brand-base-70);
+}
+
+.project-img {
+    width: 100%;
+}
 
 .subheading {
     display: block;

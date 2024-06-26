@@ -1,3 +1,6 @@
 import { LightningElement } from 'lwc';
+import IMAGES from '@salesforce/resourceUrl/images';
 
-export default class Projects extends LightningElement {}
+export default class Projects extends LightningElement {
+    siteLWCImageURL = IMAGES + '/lwr_site.png';
+}
