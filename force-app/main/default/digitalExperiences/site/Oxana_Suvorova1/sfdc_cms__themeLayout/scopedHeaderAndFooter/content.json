@@ -9,6 +9,7 @@
           "attributes" : {
             "buttonLabel" : "Contact Me",
             "buttonRedirectPageAPIName" : "Home",
+            "dxpStyle" : { },
             "menuName" : "Default_Navigation"
           },
           "definition" : "c:navigationMenu",
@@ -19,6 +20,7 @@
             "backgroundImageConfig" : "",
             "backgroundImageOverlay" : "rgba(0,0,0,0)",
             "componentSpacerSize" : "",
+            "dxpStyle" : { },
             "maxContentWidth" : "",
             "sectionColumnGutterWidth" : "",
             "sectionConfig" : "{\"UUID\":\"fff3c6da-ee90-4ecd-8865-f059b43f9cf7\",\"columns\":[{\"UUID\":\"bddc6c75-0c37-4db3-bfa5-fa700d606692\",\"columnName\":\"Column 1\",\"columnKey\":\"headerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
@@ -40,6 +42,7 @@
       }, {
         "children" : [ {
           "attributes" : {
+            "dxpStyle" : { },
             "menuName" : "Default_Navigation"
           },
           "definition" : "c:footer",
@@ -50,6 +53,7 @@
             "backgroundImageConfig" : "",
             "backgroundImageOverlay" : "rgba(0,0,0,0)",
             "componentSpacerSize" : "",
+            "dxpStyle" : { },
             "maxContentWidth" : "",
             "sectionColumnGutterWidth" : "",
             "sectionConfig" : "{\"UUID\":\"a478e851-cd89-48e7-b3db-ed5f1fe8d68c\",\"columns\":[{\"UUID\":\"daf1a69c-57a3-44d7-b299-31991a8bc111\",\"columnName\":\"Column 1\",\"columnKey\":\"footerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"

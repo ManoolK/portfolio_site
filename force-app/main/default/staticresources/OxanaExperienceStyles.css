@@ -2,8 +2,10 @@
 * Scoped to the root of the document and all its descendant elements.
 * Add this to the Header markup in Experience builder>Settings>Advanced>Edit Header: 
 * <link rel="stylesheet" href="/sfsites/c/resource/OxanaExperienceStyles" />
-* Font size system (px)
+*
+* Font size system (px):
 * 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*
 * Font weights:
 * Default: 400
 * Button: 600
@@ -18,8 +20,13 @@
 * -0.5px
 * 0.75px
 *
+* Border radius:
+* Default:
+* Medium:
+* Large: 36px
+*
 * Spacing system (px)
-* 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+* 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 160
 */
 :root {
     /** Use --dxp-g to make broad changes **/
@@ -82,7 +89,13 @@
 
     /** Brand color shades **/
     --slds-g-color-brand-base-70: #c1c5d3;
+    --slds-g-color-brand-base-20: #596389;
     --slds-g-color-brand-base-10: #45507b;
+
+    /** Brand-1 color shades **/
+    --mnlk-w-color-brand-1-20: #f6ac89;
+    --mnlk-w-color-brand-1-10: #f5a17b;
+    --mnlk-b-color-brand-1-10: #dc8861;
 }
 
     
@@ -236,10 +249,19 @@ img {
 }
 
 .container {
-    max-width: 130rem;
+    max-width: 134.4rem;
+    padding: 0 3.2rem;
     margin: 0 auto;
 }
 
+.grid {
+    display: grid;
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .gap--small {
-    gap: 2rem;
+    gap: 2.4rem;
 }

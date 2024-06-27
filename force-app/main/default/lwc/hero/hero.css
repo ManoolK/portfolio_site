@@ -55,7 +55,7 @@
     padding: 1.4rem 2.8rem;
     border-radius: 150px;
 
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -66,7 +66,7 @@
 
 .btn--full:hover,
 .btn--full:active {
-    background-color: #dc8861;
+    background-color: var(--mnlk-b-color-brand-1-10);
 }
 
 .btn--outline:link,

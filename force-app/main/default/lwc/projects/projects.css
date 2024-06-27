@@ -1,6 +1,7 @@
 .section-projects {
     padding: 9.6rem 0;
     background-color: var(--dxp-g-brand);
+    border-radius: 55px;
 }
 
 .heading-secondary {
@@ -15,19 +16,44 @@
 .heading-tertiary {
     font-weight: 600;
     letter-spacing: -0.5px;
-    font-size: 2.4rem;
-    line-height: 1.2;
-    margin-bottom: 3.2rem;
+    font-size: 3.6rem;
+    line-height: 1;
+    padding-bottom: 2.4rem;
     color: var(--dxp-g-root);
 }
 
-.orange {
+.brand-1 {
     color: var(--dxp-g-brand-1);
 }
 
+.border-bottom-line--brand {
+    border-bottom: 1px solid var(--slds-g-color-brand-base-20);
+}
+
+.border-bottom-line--brand-1 {
+    border-bottom: 1px solid var(--mnlk-w-color-brand-1-20);
+}
+
 .project {
-    background-color: var(--slds-g-color-brand-base-10);
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+    border-radius: 36px;
+    overflow: hidden;
+    padding: 1.2rem;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 2.4rem;
+}
+
+.project--brand {
+    background-color: var(--slds-g-color-brand-base-10);
+}
+
+.project--brand-1 {
+    background-color: var(--dxp-g-brand-1);
 }
 
 .project-descr {
@@ -37,6 +63,7 @@
 
 .project-img {
     width: 100%;
+    border-radius: 28px;
 }
 
 .subheading {

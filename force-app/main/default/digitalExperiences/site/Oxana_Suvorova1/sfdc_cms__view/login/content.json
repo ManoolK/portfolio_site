@@ -9,6 +9,7 @@
             "backgroundImageConfig" : "",
             "backgroundImageOverlay" : "rgba(0,0,0,0)",
             "componentSpacerSize" : "",
+            "dxpStyle" : { },
             "maxContentWidth" : "",
             "sectionColumnGutterWidth" : "",
             "sectionConfig" : "{\"UUID\":\"1eae2044-11d7-4f6f-b4ab-84a89b604b3a\",\"columns\":[{\"UUID\":\"fb90d124-b085-48a7-aa52-3a012b7f2a0b\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
@@ -17,6 +18,7 @@
             "children" : [ {
               "attributes" : {
                 "alignment" : "left",
+                "dxpStyle" : { },
                 "imageInfo" : "",
                 "logoWidth" : 250
               },
@@ -25,6 +27,7 @@
               "type" : "component"
             }, {
               "attributes" : {
+                "dxpStyle" : { },
                 "forgotPasswordLabel" : "Forgot your password?",
                 "forgotPasswordUrl" : "/ForgotPassword",
                 "loginButtonLabel" : "Log In",
@@ -39,6 +42,7 @@
               "type" : "component"
             }, {
               "attributes" : {
+                "dxpStyle" : { },
                 "employeeLoginLinkLabel" : "Are you an employee? Log in"
               },
               "definition" : "community_login:employeeLoginLink",
@@ -63,6 +67,7 @@
           "attributes" : {
             "customHeadTags" : "",
             "description" : "",
+            "dxpStyle" : { },
             "pageTitle" : "Login",
             "recordId" : "{!recordId}"
           },

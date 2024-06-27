@@ -7,6 +7,7 @@
     <disableReputationRecordConversations>true</disableReputationRecordConversations>
     <emailSenderAddress>mail.suvorova.o@gmail.com</emailSenderAddress>
     <emailSenderName>Oxana Suvorova</emailSenderName>
+    <embeddedLoginEnabled>true</embeddedLoginEnabled>
     <enableApexCDNCaching>true</enableApexCDNCaching>
     <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
     <enableDirectMessages>true</enableDirectMessages>
