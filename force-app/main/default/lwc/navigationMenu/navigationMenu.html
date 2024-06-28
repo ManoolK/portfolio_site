@@ -40,7 +40,7 @@
             </div>
             <div class="slds-col slds-size_1-of-6">
                 <a href={href} onclick={handleHamburgerMenuToggle}>
-                    <img class="hamburger-menu-icon slds-var-p-left_small slds-var-p-top_small" src={xIcon}/>
+                    <img class="hamburger-menu-icon slds-var-p-left_small slds-var-p-top_small" src={xIcon} label={buttonLabel}/>
                 </a>
             </div>
         </div>
@@ -73,13 +73,15 @@
                 </div>
                 <div class="slds-col">
                     <span>
-                        <lightning-button
+                        <!-- <a href={href} onclick={handleClick} title="Primary action" class="btn btn--full">{buttonLabel}</a> -->
+                        <!-- <lightning-button
                             variant="brand"
                             label={buttonLabel}
                             title="Primary action"
                             onclick={handleClick}
-                            class="slds-var-m-right_x-medium mnlk-cta"
-                        ></lightning-button>
+                            class="mnlk-cta"
+                        ></lightning-button> -->
+                        <button title="Primary action" type="button" class="slds-button slds-button_brand mnlk-cta" onclick={handleClick}>{buttonLabel}</button>
                     </span>
                 </div>
             </div>

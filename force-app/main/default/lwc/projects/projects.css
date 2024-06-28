@@ -10,7 +10,8 @@
     letter-spacing: -0.5px;
     font-size: 4.4rem;
     line-height: 1.2;
-    margin-bottom: 9.6rem;
+    padding-bottom: 2.4rem;
+    margin-bottom: 7.2rem;
 }
 
 .heading-tertiary {
@@ -31,7 +32,7 @@
 }
 
 .border-bottom-line--brand-1 {
-    border-bottom: 1px solid var(--mnlk-w-color-brand-1-20);
+    border-bottom: 1px solid var(--mnlk-w-color-brand-1-30);
 }
 
 .project {
@@ -53,7 +54,7 @@
 }
 
 .project--brand-1 {
-    background-color: var(--dxp-g-brand-1);
+    background-color: var(--mnlk-w-color-brand-1-10);
 }
 
 .project-descr {

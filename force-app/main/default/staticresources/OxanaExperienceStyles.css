@@ -22,8 +22,9 @@
 *
 * Border radius:
 * Default:
-* Medium:
+* Medium: 28px
 * Large: 36px
+* Max: 55px
 *
 * Spacing system (px)
 * 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 160
@@ -37,9 +38,9 @@
     --dxp-g-root-contrast-1: #303C6C;
     --dxp-g-root-contrast-2: #303C6C;
     --dxp-g-root-contrast-3: #fff;
-    --dxp-g-brand: #303C6C;
+    --dxp-g-brand: #053473;
     --dxp-g-brand-contrast: #D2FDFF;
-    --dxp-g-brand-1: #F4976C;
+    --dxp-g-brand-1: #d17026;
     --dxp-g-brand-2: #B4DFE5;
     --dxp-g-brand-3: #D2FDFF;
     --dxp-g-brand-contrast-1: #FBE8A6;
@@ -48,7 +49,7 @@
     --dxp-g-neutral: #76716b;
     --dxp-g-neutral-contrast: #fff;
     --dxp-g-neutral-1: #EBEEEC;
-    --dxp-g-footer-contrast: #303C6C;
+    --dxp-g-footer-contrast: #053473;
     /** set the font for all root/body text **/
     --dxp-g-root-font-family: "Salesforce Sans", arial;
     /** set root html font size. Percentage of user's browser font-size setting **/
@@ -60,6 +61,7 @@
     /** Set the link color **/
     --dxp-c-link-text-color: #000000;
 
+    /** BUTTONS **/
     /** Font for buttons **/
     --dxp-s-button-font-family: Salesforce Sans;
     --dxp-s-button-font-size: 2rem;
@@ -68,12 +70,15 @@
     --dxp-s-button-color-contrast: #fff;
     --dxp-s-button-color-hover-contrast: #fff;
     --dxp-s-button-color-focus-contrast: #fff;
-
+    --sds-c-button-radius-border: 2.8rem;
+    /** Colors for buttons **/
+    --dxp-s-button-color: #d17026;
+    --dxp-s-button-color-1: #bc6522; /*--mnlk-b-color-brand-1-10*/
+    --sds-c-button-brand-color-background: #d17026;
+    
 
     --dxp-c-anchor-text-color: #333;
-    
-    --sds-c-button-radius-border: 1.5625rem;
-    
+    --dxp-c-button-brand-transition: all 0.3s;
     --dxp-c-link-transition: all 0.3s;
 
     --dxp-c-section-content-spacing-inline-start: 0;
@@ -88,14 +93,15 @@
     --sds-c-button-brand-spacing-inline-end: 1.875rem;
 
     /** Brand color shades **/
-    --slds-g-color-brand-base-70: #c1c5d3;
-    --slds-g-color-brand-base-20: #596389;
-    --slds-g-color-brand-base-10: #45507b;
+    --slds-g-color-brand-base-70: #b4c2d5;
+    --slds-g-color-brand-base-20: #375d8f;
+    --slds-g-color-brand-base-10: #1e4881;
 
     /** Brand-1 color shades **/
-    --mnlk-w-color-brand-1-20: #f6ac89;
-    --mnlk-w-color-brand-1-10: #f5a17b;
-    --mnlk-b-color-brand-1-10: #dc8861;
+    --mnlk-w-color-brand-1-30: #df9b67;
+    --mnlk-w-color-brand-1-20: #da8d51;
+    --mnlk-w-color-brand-1-10: #d67e3c;
+    --mnlk-b-color-brand-1-10: #bc6522;
 }
 
     
@@ -264,4 +270,28 @@ img {
 
 .gap--small {
     gap: 2.4rem;
+}
+
+.btn:link, 
+.btn:visited {
+    display: inline-block;
+    font-size: 2rem;
+    font-family: var(--dxp-s-button-font-family);
+    font-weight: var(--dxp-s-button-font-weight);
+    text-decoration: var(--dxp-s-link-text-decoration);
+    padding: 1.4rem 2.8rem;
+    border-radius: 150px;
+
+    transition: var(--dxp-c-link-transition);
+}
+
+.btn--full:link,
+.btn--full:visited {
+    background-color: var(--dxp-g-brand-1);
+    color: var(--dxp-g-neutral-contrast);
+}
+
+.btn--full:hover,
+.btn--full:active {
+    background-color: var(--mnlk-b-color-brand-1-10);
 }
