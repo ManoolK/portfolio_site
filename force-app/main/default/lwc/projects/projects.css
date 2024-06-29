@@ -36,6 +36,8 @@
 }
 
 .project {
+    display: flex;
+    flex-direction: column;
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
     border-radius: 36px;
     overflow: hidden;
@@ -59,12 +61,17 @@
 
 .project-descr {
     font-size: 1.8rem;
-    color: var(--slds-g-color-brand-base-70);
+    color: var(--slds-g-color-brand-base-80);
+}
+
+.project-descr--brand-1 {
+    color: var(--mnlk-w-color-brand-1-80);
 }
 
 .project-img {
     width: 100%;
     border-radius: 28px;
+    margin-top: auto;
 }
 
 .subheading {

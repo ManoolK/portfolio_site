@@ -70,6 +70,9 @@
     --dxp-s-button-color-contrast: #fff;
     --dxp-s-button-color-hover-contrast: #fff;
     --dxp-s-button-color-focus-contrast: #fff;
+    --dxp-s-button-padding: 2rem;
+    --dxp-s-button-padding-block-start: 0.2rem;
+    --dxp-s-button-padding-block-end: 0.2rem;
     --sds-c-button-radius-border: 2.8rem;
     /** Colors for buttons **/
     --dxp-s-button-color: #d17026;
@@ -93,11 +96,14 @@
     --sds-c-button-brand-spacing-inline-end: 1.875rem;
 
     /** Brand color shades **/
+    --slds-g-color-brand-base-80: #cdd6e3;
     --slds-g-color-brand-base-70: #b4c2d5;
     --slds-g-color-brand-base-20: #375d8f;
     --slds-g-color-brand-base-10: #1e4881;
 
     /** Brand-1 color shades **/
+    --mnlk-w-color-brand-1-80: #f6e2d4;
+    --mnlk-w-color-brand-1-70: #f1d4be;
     --mnlk-w-color-brand-1-30: #df9b67;
     --mnlk-w-color-brand-1-20: #da8d51;
     --mnlk-w-color-brand-1-10: #d67e3c;
