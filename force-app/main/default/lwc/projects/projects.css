@@ -42,6 +42,12 @@
     border-radius: 36px;
     overflow: hidden;
     padding: 1.2rem;
+    transition: all 0.4s;
+}
+
+.project:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.08);
 }
 
 .project-text {
@@ -49,6 +55,10 @@
     flex-direction: column;
     gap: 2.4rem;
     padding: 2.4rem;
+}
+
+.project-title {
+    text-decoration: var(--dxp-s-link-text-decoration);
 }
 
 .project--brand {
@@ -82,4 +92,25 @@
     text-transform: uppercase;
     margin-bottom: 1.6rem;
     letter-spacing: 0.75px;
+}
+
+.all-projects {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.link:link,
+.link:visited {
+    display: inline-block;
+    color: var(--dxp-g-root);
+    text-decoration: var(--dxp-s-link-text-decoration);
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: var(--dxp-c-link-transition);
+}
+
+.link:hover,
+.link:active {
+    color: var(--dxp-s-button-color);
+    border-bottom: 1px solid transparent;
 }

@@ -49,6 +49,7 @@
     --dxp-g-neutral: #76716b;
     --dxp-g-neutral-contrast: #fff;
     --dxp-g-neutral-1: #EBEEEC;
+    --dxp-g-neutral-3: #fff;
     --dxp-g-footer-contrast: #053473;
     /** set the font for all root/body text **/
     --dxp-g-root-font-family: "Salesforce Sans", arial;
@@ -67,6 +68,7 @@
     --dxp-s-button-font-size: 2rem;
     --dxp-s-button-font-weight: 600;
     --dxp-s-link-text-decoration: none;
+    --dxp-s-link-text-decoration-hover: none;
     --dxp-s-button-color-contrast: #fff;
     --dxp-s-button-color-hover-contrast: #fff;
     --dxp-s-button-color-focus-contrast: #fff;
@@ -78,7 +80,9 @@
     --dxp-s-button-color: #d17026;
     --dxp-s-button-color-1: #bc6522; /*--mnlk-b-color-brand-1-10*/
     --sds-c-button-brand-color-background: #d17026;
-    
+    /** Icon buttons **/
+    --slds-c-icon-color-foreground-default: #fff;
+    --slds-c-icon-color-foreground: #fff;
 
     --dxp-c-anchor-text-color: #333;
     --dxp-c-button-brand-transition: all 0.3s;
@@ -276,6 +280,10 @@ img {
 
 .gap--small {
     gap: 2.4rem;
+}
+
+.margin-botton-md {
+    margin-bottom: 4.8rem !important;
 }
 
 .btn:link, 
