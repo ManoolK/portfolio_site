@@ -127,10 +127,11 @@
     h2 {
         font-family: Noto Sans JP, DM Serif Display;
         font-style: normal;
-        font-weight: bold;
-        font-size: 3rem;
-        line-height: 3.75rem;
+        font-weight: 700;
+        font-size: 4.4rem;
+        line-height: 1.2;
         letter-spacing: 0.05em;
+        color: var(--dxp-g-root-contrast, #333);
     }
     h3 {
         font-family: Noto Sans JP, DM Serif Display;
@@ -308,4 +309,8 @@ img {
 .btn--full:hover,
 .btn--full:active {
     background-color: var(--mnlk-b-color-brand-1-10);
+}
+
+.brand-1 {
+    color: var(--dxp-g-brand-1);
 }
