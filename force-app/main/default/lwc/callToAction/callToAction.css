@@ -1,0 +1,42 @@
+.section-cta {
+    padding: 4.8rem 0 9.6rem;
+}
+
+.cta {
+    grid-template-columns: 5fr 7fr;
+    gap: 3.2rem;
+}
+
+.cta-text {
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+.cta-form-box {
+    background-color: var(--slds-g-color-brand-base-90);
+    border-radius: 36px;
+    padding: 2.4rem;
+}
+
+.cta-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.cta-form input,
+.cta-form textarea {
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    border: none;
+    border-radius: 28px;
+}
+
+.cta-form button {
+    align-self: flex-start;
+}
+
+::placeholder {
+    color: var(--dxp-s-form-element-placeholder-text-color);
+}

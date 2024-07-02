@@ -31,7 +31,9 @@
           },
           "children" : [ {
             "children" : [ {
-              "attributes" : { },
+              "attributes" : {
+                "dxpStyle" : { }
+              },
               "definition" : "c:hero",
               "id" : "32068848-4092-41c6-ae50-b72aa21538e8",
               "type" : "component"
@@ -107,6 +109,7 @@
             "backgroundImageConfig" : "",
             "backgroundImageOverlay" : "rgba(0,0,0,0)",
             "componentSpacerSize" : "",
+            "dxpStyle" : { },
             "layoutDirectionDesktop" : "row",
             "layoutDirectionMobile" : "column",
             "layoutDirectionTablet" : "column",
@@ -117,6 +120,17 @@
             "sectionVerticalAlign" : "flex-start"
           },
           "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:credentials",
+              "id" : "4deaf9d3-1343-4d7e-b896-2be711ea0d14",
+              "type" : "component"
+            }, {
+              "attributes" : { },
+              "definition" : "c:callToAction",
+              "id" : "b620c022-3480-4a67-a969-4d994e2777d9",
+              "type" : "component"
+            } ],
             "id" : "9ec71d80-ed18-46f8-ab1a-bb4f0444a59f",
             "name" : "col1",
             "title" : "Column 1",
