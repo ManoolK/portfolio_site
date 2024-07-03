@@ -40,3 +40,7 @@
 ::placeholder {
     color: var(--dxp-s-form-element-placeholder-text-color);
 }
+
+.cta *:focus {
+    outline-color: var(--slds-g-color-brand-base-30);
+}

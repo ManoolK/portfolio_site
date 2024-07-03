@@ -28,7 +28,7 @@
 *
 * Spacing system (px)
 * 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 160
-*/
+**/
 :root {
     /** Use --dxp-g to make broad changes **/
     --dxp-g-root: #fff;
@@ -324,4 +324,20 @@ img {
 
 .brand-1 {
     color: var(--dxp-g-brand-1);
+}
+
+@media (max-width: 84em) {
+    .container {
+        max-width: 120rem;
+    }
+}
+
+/* Below 1200px (Landscape Tablets) */
+@media (max-width: 75em) {
+    :root {
+        /** set root html font size. Percentage of user's browser font-size setting 
+        * 9px / 16px
+        **/
+        --dxp-s-html-font-size: 56.25%;
+    }
 }

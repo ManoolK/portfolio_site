@@ -1,8 +1,6 @@
 .navbar {
-    /* padding-bottom: 1rem; */
     padding: 0.8rem 3.8rem 1.6rem;
     background-color: var(--dxp-g-brand);
-    /* rgb(48, 60, 108); */
 }
 
 .navigation-header {
@@ -45,7 +43,11 @@ img.hamburger-menu-icon {
     height: auto;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 75em) {
+    .navbar {
+        padding: 0.8rem 3.2rem 1.6rem;
+    }
+
     .navbar-items {
         font-size: var(--dxp-g-font-size-10);
     }

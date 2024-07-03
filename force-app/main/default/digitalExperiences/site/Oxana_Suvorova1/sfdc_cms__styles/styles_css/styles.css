@@ -1,6 +1,12 @@
 /*
  * Your global styles here
  */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 html,
 body {
     height: 100%;
