@@ -14,3 +14,9 @@
 .mnlk-nav-link:active {
     color: var(--dxp-g-brand-1);
 }
+
+@media (max-width: 75em) {
+    .mnlk-nav-link {
+        padding: 0;
+    }
+}

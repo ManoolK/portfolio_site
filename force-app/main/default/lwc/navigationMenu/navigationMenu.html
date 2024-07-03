@@ -2,12 +2,15 @@
     <!-- Vertical Navigation List for Mobile -->
     <template if:true={showHamburgerMenu}>
         <div class="slds-is-fixed slds-grid hamburger-menu-container navbar">
+            <!-- Mobile Navigation panel -->
             <div class="slds-col slds-size_5-of-6">
-                <div class="slds-grid slds-var-p-left_small slds-var-p-top_small slds-grid_vertical hamburger-menu">
-                    <div class="slds-col slds-var-p-left_medium slds-size_1-of-4">
-                        <c-navigation-menu-logo formfactor="hamburger"></c-navigation-menu-logo>
+                <div class="slds-grid slds-grid_vertical hamburger-menu">
+                    <!-- Logo / formfactor="hamburger" -->
+                    <div class="slds-col slds-size_1-of-4">
+                        <c-navigation-menu-logo formfactor="desktop"></c-navigation-menu-logo>
                     </div>
-                    <div class="slds-col">
+                    <!-- Navigation Menu -->
+                    <div>
                         <span>
                             <nav role="navigation" class="slds-nav-vertical">
                                 <ul class="slds-has-block-links_space">
@@ -20,12 +23,14 @@
                             </nav>
                         </span>
                     </div>
-                    <div class="slds-col">
+                    <!-- Log In -->
+                    <div>
                         <span>
-                            <a href="/customer/s" class="navbar-items slds-var-p-left_small">Log In</a>
+                            <a href="/customer/s" class="mnlk-nav-link">Log In</a>
                         </span>
                     </div>
-                    <div class="slds-col slds-col_bump-bottom">
+                    <!-- Button -->
+                    <div class="slds-col_bump-bottom">
                         <span>
                             <!-- <lightning-button
                                 variant="brand"
@@ -39,6 +44,7 @@
                     </div>
                 </div>
             </div>
+            <!-- X Icon to close the menu -->
             <div class="slds-col slds-size_1-of-6">
                 <a href={href} onclick={handleHamburgerMenuToggle}>
                     <img class="hamburger-menu-icon slds-var-p-left_small slds-var-p-top_small" src={xIcon} alt={buttonLabel}/>

@@ -4,7 +4,7 @@
 }
 
 .navigation-header {
-    font-size: var(--dxp-g-font-size-10);
+    font-size: var(--dxp-g-font-size-6);
     font-weight: 500;
 }
 
@@ -13,7 +13,7 @@
     text-decoration: none;
     color: var(--dxp-g-root-contrast-3);
     font-weight: 500;
-    font-size: var(--dxp-g-font-size-10);
+    font-size: var(--dxp-g-font-size-6);
     transition: all 0.3s;
 }
 
@@ -34,7 +34,9 @@
 }
 
 .hamburger-menu {
-    background: var(--dxp-g-neutral-contrast);
+    gap: 3.4rem;
+    padding: 2.4rem 2.4rem 0;
+    background: var(--slds-g-color-brand-base-10);
     min-height: 100%;
 }
 
@@ -48,7 +50,14 @@ img.hamburger-menu-icon {
         padding: 0.8rem 3.2rem 1.6rem;
     }
 
-    .navbar-items {
-        font-size: var(--dxp-g-font-size-10);
+    .navbar-items,
+    .mnlk-nav-link:link,
+    .mnlk-nav-link:visited {
+        font-size: var(--dxp-g-font-size-8);
+        padding-left: 2rem;
+    }
+
+    button {
+        font-size: var(--dxp-g-font-size-8);
     }
 }

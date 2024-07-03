@@ -62,6 +62,10 @@
     /** Set the link color **/
     --dxp-c-link-text-color: #000000;
 
+    /** FONT SIZE **/
+    --dxp-g-font-size-6: 2rem;
+    --dxp-g-font-size-8: 3rem;
+
     /** BUTTONS **/
     /** Font for buttons **/
     --dxp-s-button-font-family: Salesforce Sans;
@@ -339,5 +343,15 @@ img {
         * 9px / 16px
         **/
         --dxp-s-html-font-size: 56.25%;
+    }
+}
+
+/* Below 944px (Tablets) */
+@media (max-width: 59em) {
+    :root {
+        /** set root html font size. Percentage of user's browser font-size setting 
+        * 8px / 16px = 50%
+        **/
+        --dxp-s-html-font-size: 50%;
     }
 }
