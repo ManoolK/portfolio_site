@@ -44,3 +44,14 @@
 .cta *:focus {
     outline-color: var(--slds-g-color-brand-base-30);
 }
+
+/* Below 656px (Phones) */
+@media (max-width: 30em) {
+    .section-cta {
+        padding: 0 0 6.4rem;
+    }
+
+    .cta {
+        grid-template-columns: 1fr;
+    }
+}

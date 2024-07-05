@@ -114,3 +114,18 @@
         width: 60%;
     }
 }
+
+/* Below 656px (Phones) */
+@media (max-width: 30em) {
+    .section-hero {
+        padding: 6.4rem 0;
+    }
+
+    .hero {
+        padding: 0 3.2rem;
+    }
+
+    .hero-img {
+        width: 80%;
+    }
+}

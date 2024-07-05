@@ -1,7 +1,7 @@
 import { LightningElement, api } from 'lwc';
 import { NavigationMixin } from 'lightning/navigation';
 import OXANA_LOGO from '@salesforce/resourceUrl/oxanalogo';
-import OXANA_MOBILE_LOGO from '@salesforce/resourceUrl/oxanaHamburgerMenuLogo';
+// import OXANA_MOBILE_LOGO from '@salesforce/resourceUrl/oxanaHamburgerMenuLogo';
 
 export default class NavigationMenuLogo extends NavigationMixin(LightningElement) {
     @api formfactor;
@@ -14,7 +14,7 @@ export default class NavigationMenuLogo extends NavigationMixin(LightningElement
 
     get logo() {
         if (this.formfactor === 'hamburger') {
-            return OXANA_MOBILE_LOGO;
+            return OXANA_LOGO; //OXANA_MOBILE_LOGO;
         }
         return OXANA_LOGO;
     }

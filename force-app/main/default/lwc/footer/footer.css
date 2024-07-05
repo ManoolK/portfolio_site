@@ -1,7 +1,6 @@
 .footer {
     padding: 0 3.8rem 1rem;
     background-color: var(--dxp-g-brand);
-    /* rgb(48, 60, 108); */
 }
 
 .logo-col {
@@ -50,4 +49,15 @@
 
 .margin-bottom-medium {
     margin-bottom: 2.4rem !important;
+}
+
+/* Below 656px (Phones) */
+@media (max-width: 30em) {
+    .slds-grid {
+        gap: 1.2rem;
+    }
+
+    .slds-var-p-left_small {
+        padding-left: 0;
+    }
 }

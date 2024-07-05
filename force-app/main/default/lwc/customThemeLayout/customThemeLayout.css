@@ -6,17 +6,10 @@
 
 }
 
-/* @media only screen and (min-width: 48em) {
-    .custom-header {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-} */
-
 .custom-header {
     width: 100%;
     background-color: var(--dxp-g-root);
-    min-height: 4.5rem;
+    min-height: 6.4rem;
 }
 
 .custom-footer {

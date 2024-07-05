@@ -114,3 +114,15 @@
     color: var(--dxp-s-button-color);
     border-bottom: 1px solid transparent;
 }
+
+/* Below 656px (Phones) */
+@media (max-width: 30em) {
+    .section-projects {
+        padding: 6.4rem 0;
+    }
+
+    .heading-secondary {
+        padding-bottom: 2.4rem;
+        margin-bottom: 4rem;
+    }
+}

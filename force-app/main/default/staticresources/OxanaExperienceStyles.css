@@ -65,6 +65,7 @@
     /** FONT SIZE **/
     --dxp-g-font-size-6: 2rem;
     --dxp-g-font-size-8: 3rem;
+    --dxp-s-html-font-size-mobile: 1rem;
 
     /** BUTTONS **/
     /** Font for buttons **/
@@ -123,7 +124,6 @@
     --mnlk-b-color-brand-1-10: #bc6522;
 }
 
-    
 @media only screen and (min-width: 48em) {
     h1 {
         font-family: Noto Sans JP, DM Serif Display;
@@ -174,8 +174,8 @@
         font-family: Noto Sans JP, DM Serif Display;
         font-style: normal;
         font-weight: bold;
-        font-size: 2rem;
-        line-height: 2.25rem;
+        font-size: 4.4rem;
+        line-height: 1.2;
         letter-spacing: 0.05em;
     }
     h3 {
@@ -196,14 +196,6 @@
         color: var(--dxp-g-root-contrast, #333);
     }
 }
-
-/* p {
-    letter-spacing: 0.03rem;
-}
-
-img {
-    vertical-align: middle;
-} */
 
 .scroll {
     
@@ -353,5 +345,29 @@ img {
         * 8px / 16px = 50%
         **/
         --dxp-s-html-font-size: 50%;
+    }
+}
+
+@media (max-width: 48em) {
+    html {
+        font-size: var(--dxp-s-html-font-size);
+    }
+}
+
+/* Below 656px (Small Tablets) */
+@media (max-width: 41em) {
+    .grid--3-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .gap--small {
+        gap: 4.8rem;
+    }
+}
+
+/* Below 656px (Phones) */
+@media (max-width: 30em) {
+    .margin-botton-md {
+        margin-bottom: 2.4rem !important;
     }
 }
