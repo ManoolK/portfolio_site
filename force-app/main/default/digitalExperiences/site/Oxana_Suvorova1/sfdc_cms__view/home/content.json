@@ -121,12 +121,16 @@
           },
           "children" : [ {
             "children" : [ {
-              "attributes" : { },
+              "attributes" : {
+                "dxpStyle" : { }
+              },
               "definition" : "c:credentials",
               "id" : "4deaf9d3-1343-4d7e-b896-2be711ea0d14",
               "type" : "component"
             }, {
-              "attributes" : { },
+              "attributes" : {
+                "dxpStyle" : { }
+              },
               "definition" : "c:callToAction",
               "id" : "b620c022-3480-4a67-a969-4d994e2777d9",
               "type" : "component"
