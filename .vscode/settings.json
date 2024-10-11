@@ -7,5 +7,6 @@
   "workbench.colorCustomizations": {
     "statusBar.background": null,
     "activityBar.background": null
-  }
+  },
+  "editor.fontSize": 15
 }
