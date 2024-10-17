@@ -5,15 +5,16 @@
                 <h2 class="heading-secondary margin-botton-md">
                     Let's <span class="brand-1">Connect</span> &amp; <span class="brand-1">Collaborate</span>
                 </h2>
-                <p class="cta-text">Drop me a line with your thoughts or inquiries, and I'll make sure to get back to you soon. Let's bridge the gap between ideas and innovation together!</p>
+                <p class="cta-text">{smallText}</p>
             </div>
             <div class="cta-form-box">
-                <form class="cta-form" onsubmit={handleSubmit}>
-                    <input type="text" placeholder="Full Name *" class="full-name" />
-                    <input type="email" placeholder="Email *" id="email" required />
-                    <input type="text" placeholder="Company *" id="company" required />
-                    <textarea name="message" rows="4" id="message" required placeholder="Message *"></textarea>
-                    <input class="btn btn--full margin-right-small" type="submit" value={buttonLabel} />
+                <form class="cta-form" action={actionURL} method="POST">
+                    <input type=hidden name="oid" value={organizationId}>
+                    <input type="text" placeholder="Full Name *" name="last_name" id="last_name" />
+                    <input type="email" placeholder="Email *" name="email" id="email" required />
+                    <input type="text" placeholder="Company *" name="company" id="company" required />
+                    <textarea name="description" rows="4" class="message" required placeholder="Message *"></textarea>
+                    <input class="btn btn--full margin-right-small" type="submit" name="submit" value={buttonLabel} />
                 </form>
             </div>
         </div>

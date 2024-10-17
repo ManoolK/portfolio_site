@@ -11,6 +11,13 @@
     <targetConfigs>
         <targetConfig targets="lightningCommunity__Default">
             <property
+            type="String"
+            name="smallText"
+            label="Small Text"
+            default="Send me a message. Let's connect!"
+            description="A small text located below the Title"
+            />
+            <property
                 type="String"
                 name="buttonLabel"
                 label="Button Label"

@@ -30,7 +30,7 @@
     font-size: 1.8rem;
     font-family: inherit;
     border: none;
-    border-radius: 28px;
+    border-radius: var(--sds-c-button-radius-border);
 }
 
 .cta-form input.btn {
@@ -40,7 +40,6 @@
     text-decoration: var(--dxp-s-link-text-decoration);
     align-self: flex-start;
     padding: 1.4rem 2.8rem;
-    border-radius: 150px;
     transition: var(--dxp-c-link-transition);
 }
 

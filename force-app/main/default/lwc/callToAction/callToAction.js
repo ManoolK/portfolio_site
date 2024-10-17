@@ -1,27 +1,23 @@
-import { LightningElement, api } from 'lwc';
-import sendMessage from '@salesforce/apex/CallToActionController.sendMessage';
+import { LightningElement, api, wire } from 'lwc';
+import getOrgId from '@salesforce/apex/CallToActionController.getOrgId';
 
 export default class CallToAction extends LightningElement {
     @api buttonLabel;
-    fullname;
-    email;
-    company;
-    message;
+    @api smallText;
+    organizationId;
+    actionURL;
+    error;
 
-    renderedCallback() {
-        this.fullname = this.template.querySelector('.full-name');
-    }
-
-    handleSubmit(event) {
-        event.preventDefault();
-        const fullNameValue = this.fullname.value;
-        console.log(fullNameValue);
-
-        sendMessage({
-            fullName: fullNameValue,
-            company: 'com',
-            email: 'test@gmail.com',
-            message: 'test message'
-        });
+    @wire(getOrgId)
+    wiredOrgId({ error, data }) {
+        if (data) {
+            this.organizationId = data;
+            this.actionURL = 'https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=${data}';
+            this.error = undefined;
+        } else if (error) {
+            this.organizationId = undefined;
+            this.actionURL = undefined;
+            this.error = error;
+        }
     }
 }
