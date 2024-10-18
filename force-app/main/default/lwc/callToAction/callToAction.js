@@ -4,10 +4,12 @@ import getOrgId from '@salesforce/apex/CallToActionController.getOrgId';
 export default class CallToAction extends LightningElement {
     @api buttonLabel;
     @api smallText;
+    @api redirectTo;
     organizationId;
     actionURL;
     error;
-
+    connectedCallbackUrl;
+    
     @wire(getOrgId)
     wiredOrgId({ error, data }) {
         if (data) {
@@ -19,5 +21,9 @@ export default class CallToAction extends LightningElement {
             this.actionURL = undefined;
             this.error = error;
         }
+    }
+
+    connectedCallback() {
+        this.connectedCallbackUrl = window.location.href + this.redirectTo;
     }
 }

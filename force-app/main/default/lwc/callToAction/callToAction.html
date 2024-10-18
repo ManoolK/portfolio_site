@@ -10,6 +10,7 @@
             <div class="cta-form-box">
                 <form class="cta-form" action={actionURL} method="POST">
                     <input type=hidden name="oid" value={organizationId}>
+                    <input type=hidden name="retURL" value={connectedCallbackUrl}>
                     <input type="text" placeholder="Full Name *" name="last_name" id="last_name" />
                     <input type="email" placeholder="Email *" name="email" id="email" required />
                     <input type="text" placeholder="Company *" name="company" id="company" required />

@@ -23,6 +23,13 @@
                 label="Button Label"
                 default="Send Message"
             />
+            <property
+                type="String"
+                name="redirectTo"
+                label="Page API Name"
+                default="thank-you"
+                description="Page API Name to redirect after the form completion"
+            />
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>
