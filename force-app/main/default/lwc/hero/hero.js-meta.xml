@@ -6,4 +6,45 @@
         <target>lightningCommunity__Page</target>
         <target>lightningCommunity__Default</target>
     </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property 
+                type="String"
+                name="title"
+                label="Title (In Brand 2 Color)"
+                default="I'm Oxana,"
+            />
+            <property 
+                type="String"
+                name="titleSecond"
+                label="Title 2 (In Brand 1 Color)"
+                default="Salesforce Developer"
+            />
+            <property 
+                type="String"
+                name="funText"
+                label="Fun Text"
+                default="Hello!"
+            />
+            <property
+                type="String"
+                name="smallText"
+                label="Small Text"
+                default="Certified Salesforce Engineer with a real experience."
+                description="A small text located below the Title"
+            />
+            <property 
+                type="Boolean"
+                name="showButton1"
+                label="Show Button 1"
+                default="true"
+            />
+            <property 
+                type="Boolean"
+                name="showButton2"
+                label="Show Button 2"
+                default="true"
+            />
+        </targetConfig>
+    </targetConfigs>
 </LightningComponentBundle>

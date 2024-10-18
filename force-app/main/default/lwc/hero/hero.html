@@ -2,13 +2,17 @@
     <section class="section-hero">
         <div class="container hero">
             <div class="hero-text-box">
-                <span class="fun-text">Hello!</span>
+                <span class="fun-text">{funText}</span>
                 <img src={funImageURL} class="fun-image" alt="fun lines">
-                <h1 class="heading-primary orange">I'm Oxana,</h1>
-                <h1 class="heading-primary">Salesforce Developer</h1>
-                <p class="hero-description">Certified Salesforce Engineer with a real passion for making things more efficient and tackling complex business challenges. Love creating practical, user-friendly solutions. I have hands-on experience in Salesforce development, administration, integrations, and deployment.</p>
-                <a href="#" class="btn btn--full margin-right-small">View My Portfolio</a>
-                <a href="#" class="btn btn--outline">Hire Me</a>
+                <h1 class="heading-primary brand-1">{title}</h1>
+                <h1 class="heading-primary">{titleSecond}</h1>
+                <p class="hero-description">{smallText}</p>
+                <template if:true={showButton1}>
+                    <a href="#" class="btn btn--full margin-right-small">View My Portfolio</a>
+                </template>
+                <template if:true={showButton2}>
+                    <a href="#" class="btn btn--outline">Hire Me</a>
+                </template>
             </div>
             <div class="hero-image-box">
                 <img src={personImageURL} class="hero-img" alt="Oxana Suvorova photo">
