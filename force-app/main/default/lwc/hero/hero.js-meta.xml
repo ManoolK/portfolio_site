@@ -40,10 +40,30 @@
                 default="true"
             />
             <property 
+                type="String"
+                name="button1text"
+                label="Button 1 text"
+                default="View My Portfolio"
+            />
+            <property 
                 type="Boolean"
                 name="showButton2"
                 label="Show Button 2"
                 default="true"
+                description="An anchor to a component on the same page."
+            />
+            <property 
+                type="String"
+                name="button2text"
+                label="Button 2 text"
+                default="Hire Me"
+            />
+            <property 
+                type="String"
+                name="componentName"
+                label="Component to scroll (Button 2)"
+                default="call-to-action"
+                description="A component name written in kebab-case."
             />
         </targetConfig>
     </targetConfigs>

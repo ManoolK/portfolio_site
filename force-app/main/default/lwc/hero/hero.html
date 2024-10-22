@@ -8,10 +8,10 @@
                 <h1 class="heading-primary">{titleSecond}</h1>
                 <p class="hero-description">{smallText}</p>
                 <template if:true={showButton1}>
-                    <a href="#" class="btn btn--full margin-right-small">View My Portfolio</a>
+                    <a href="#" class="btn btn--full margin-right-small">{button1text}</a>
                 </template>
                 <template if:true={showButton2}>
-                    <a href="#" class="btn btn--outline">Hire Me</a>
+                    <a onclick={handleButton2Click} class="btn btn--outline" data-target-id={componentName}>{button2text}</a>
                 </template>
             </div>
             <div class="hero-image-box">

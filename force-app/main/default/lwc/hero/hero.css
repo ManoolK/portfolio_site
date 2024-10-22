@@ -56,11 +56,14 @@
     background-color: var(--mnlk-b-color-brand-1-10);
 }
 
+.btn--outline {
+    background-color: var(--dxp-g-neutral-contrast);
+    box-shadow: inset 0 0 0 2px #000;
+}
+
 .btn--outline:link,
 .btn--outline:visited {
     background-color: var(--dxp-g-neutral-contrast);
-
-    /* border: 3px solid #000; */
     box-shadow: inset 0 0 0 2px #000;
 }
 
