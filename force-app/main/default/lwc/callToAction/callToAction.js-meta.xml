@@ -3,7 +3,7 @@
     <apiVersion>61.0</apiVersion>
     <isExposed>true</isExposed>
     <masterLabel>Call To Action Form</masterLabel>
-    <description>atractive form to send a mesage</description>
+    <description>atractive form to send a mesage (call-to-action)</description>
     <targets>
         <target>lightningCommunity__Page</target>
         <target>lightningCommunity__Default</target>
