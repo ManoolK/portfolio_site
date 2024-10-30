@@ -1,11 +1,11 @@
 <template>
-    <div class="project project--brand">
+    <div class={cardClass}>
         <div class="project-text">
-            <a href="#" class="project-title border-bottom-line--brand">
-                <h3 class="heading-tertiary brand-1 ">LWR Site</h3>
+            <a href="#" class={linkClass}>
+                <h3 class={h3Class}>{cardtitle}</h3>
             </a>
-            <p class="project-descr">This application is itself the example of my work with Lightning Web Runtime.</p>
+            <p class={pClass}>{carddescription}</p>
         </div>
-        <img src={siteLWCImageURL} class="project-img" alt={altText}/>
+        <img src={imgLink} class="project-img" alt={alttext}/>
     </div>
 </template>

@@ -6,6 +6,7 @@
     overflow: hidden;
     padding: 1.2rem;
     transition: all 0.4s;
+    height: 100%;
 }
 
 .project:hover {
@@ -45,6 +46,15 @@
     width: 100%;
     border-radius: 28px;
     margin-top: auto;
+}
+
+.heading-tertiary {
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    font-size: 3.6rem;
+    line-height: 1;
+    padding-bottom: 2.4rem;
+    color: var(--dxp-g-root);
 }
 
 .brand-1 {

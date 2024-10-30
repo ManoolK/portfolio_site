@@ -8,31 +8,32 @@
         </div>
 
         <div class="container grid gap--small grid--3-cols margin-botton-md">
-
-            <div class="project project--brand">
-                <div class="project-text">
-                    <a href="#" class="project-title border-bottom-line--brand">
-                        <h3 class="heading-tertiary brand-1 ">LWR Site</h3>
-                    </a>
-                    <p class="project-descr">This application is itself the example of my work with Lightning Web Runtime.</p>
-                </div>
-                <img src={siteLWCImageURL} class="project-img" alt="LWR Portfolio Site"/>
-            </div>
             
-            <div class="project project--brand-1">
-                <div class="project-text">
-                    <h3 class="heading-tertiary border-bottom-line--brand-1">Job Tracker</h3>
-                    <p class="project-descr project-descr--brand-1">My capstone project at Cloud Code Academy, demonstrating skills I've learned.</p>
-                </div>
-                <img src={comingSoonURL} class="project-img" alt="Coming Soon"/>
-            </div>
-            <div class="project project--brand ">
-                <div class="project-text">
-                    <h3 class="heading-tertiary brand-1 border-bottom-line--brand">Coming soon</h3>
-                    <p class="project-descr">I'm working on the next project and will happily present it to you soon.</p>
-                </div>
-                <img src={comingSoonURL} class="project-img" alt="Coming Soon"/>
-            </div>
+            <c-project-card
+                cardtitle="LWR Site"
+                carddescription="This application is itself the example of my work with Lightning Web Runtime."
+                imgfromstaticres="true"
+                alttext="LWR Portfolio Site"
+                imgname="lwr_site.png"
+            ></c-project-card>
+
+            <c-project-card
+                cardtitle="Job Tracker"
+                carddescription="My capstone project at Cloud Code Academy, demonstrating skills I've learned."
+                imgfromstaticres="true"
+                alttext="Coming Soon"
+                imgname="coming_soon.png"
+                applybrand1color="true"
+            ></c-project-card>
+
+            <c-project-card
+                cardtitle="Coming soon"
+                carddescription="I'm working on the next project and will happily present it to you soon."
+                imgfromstaticres="true"
+                alttext="Coming Soon"
+                imgname="coming_soon.png"
+            ></c-project-card>
+
         </div>
         <div class="container all-projects">
             <a href="#" class="link">See all projects &rarr;</a>
